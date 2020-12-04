@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Dec 04 16:23:35 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : dsp
+Top-level Entity Name : dsp
+Family : Cyclone IV E
+Total logic elements : 8,163
+    Total combinational functions : 6,490
+    Dedicated logic registers : 2,320
+Total registers : 2320
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 1,081,856
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

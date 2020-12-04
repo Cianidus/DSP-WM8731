@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 200 96)
+	(text "I2C_AV_Config" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst" (rect 8 64 20 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "iCLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "iRST_N" (rect 0 0 34 12)(font "Arial" ))
+		(text "iRST_N" (rect 21 43 55 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "I2C_SCLK" (rect 0 0 46 12)(font "Arial" ))
+		(text "I2C_SCLK" (rect 117 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 1))
+	)
+	(port
+		(pt 184 48)
+		(bidir)
+		(text "I2C_SDAT" (rect 0 0 47 12)(font "Arial" ))
+		(text "I2C_SDAT" (rect 116 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48)(line_width 1))
+	)
+	(parameter
+		"CLK_Freq"
+		"50000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"I2C_Freq"
+		"20000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"LUT_SIZE"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Dummy_DATA"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_LIN_L"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_LIN_R"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_HEAD_L"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_HEAD_R"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"A_PATH_CTRL"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"D_PATH_CTRL"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"POWER_ON"
+		"7"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_FORMAT"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SAMPLE_CTRL"
+		"9"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_ACTIVE"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SET_VIDEO"
+		"11"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 168 64)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 200 -64 300 16))
+)

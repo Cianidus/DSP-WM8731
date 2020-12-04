@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Dec 04 16:24:03 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : dsp
+Top-level Entity Name : dsp
+Family : Cyclone IV E
+Device : EP4CE115F23I7
+Timing Models : Final
+Total logic elements : 7,443 / 114,480 ( 7 % )
+    Total combinational functions : 6,493 / 114,480 ( 6 % )
+    Dedicated logic registers : 2,320 / 114,480 ( 2 % )
+Total registers : 2320
+Total pins : 13 / 281 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 1,081,856 / 3,981,312 ( 27 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

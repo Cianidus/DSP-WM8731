@@ -1,0 +1,24 @@
+module signed (
+input clk, 
+input we, 
+input [15:0] i_data, 
+output [15:0] reg o_data,
+output re
+);
+
+wire [16:0] pos_buffer;
+assign buffer = {0, i_data};
+wire [16:0] neg_buffer;
+assign buffer = {1, ~i_data};
+
+always @(posedge clk)
+begin
+    if(we)
+    begin
+        re<=1;
+        if(i_data < 16'h8000) o_data <= neg_buffer;       
+        else o_data <= pos_buffer;
+    end
+    else re <= 0;
+end
+endmodule

@@ -1,0 +1,26 @@
+module fifo_driver (input clk, input rst, input [15:0] i_data,  output reg wr_en, output reg [7:0] o_data);
+reg [1:0] MSB;
+always @(posedge clk)
+begin
+    if(!rst)
+    begin
+        read_req<=0;
+        wr_en <= 0;
+        o_data <= 0;
+        MSB <= 2'h0;
+    end    
+    else
+    begin
+        if(MSB == 0) begin
+            o_data<=i_data[15:8];
+            MSB <= 2'h1;
+            wr_en <= 1;
+        end
+        if(MSB == 1) beign
+            o_data<=i_data[7:0];
+            MSB <= 2'h2;
+            wr_en <= 1;
+        end
+    end  
+end
+endmodule

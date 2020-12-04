@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Uart8Receiver.v(39): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.0/E4C115/dsp/uart/Uart8Receiver.v Line: 39
